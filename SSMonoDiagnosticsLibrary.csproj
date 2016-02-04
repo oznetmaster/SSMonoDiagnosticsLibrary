@@ -1,0 +1,155 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0331B9AF-3EDE-4201-9FE0-AFF10098FDFE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSMonoDiagnosticsLibrary</RootNamespace>
+    <AssemblyName>SSMonoDiagnosticsLibrary</AssemblyName>
+    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92500};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>SSHARP NETCF NETCF_3_5 NO_LOCK_FREE NET_2_0 CONFIGURATION_DEP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <DefineConstants>SSHARP NETCF NETCF_3_5 NO_LOCK_FREE NET_2_0 CONFIGURATION_DEP</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpReflectionInterface, Version=1.0.5303.33300, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpReflectionInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpDateTimeLibrary, Version=1.0.0.22727, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpDateTimeLibrary\SSharpDateTimeLibrary\bin\Release\SSharpDateTimeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpReflectionExtensionsLibrary, Version=1.0.0.22225, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpReflectionExtensionsLibrary\SSharpReflectionExtensionsLibrary\bin\Release\SSharpReflectionExtensionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoCollectionsLibrary, Version=1.0.0.19624, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoCollectionsLibrary\SSMonoCollectionsLibrary\bin\Release\SSMonoCollectionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoComponentModelLibrary, Version=1.0.0.11934, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoComponentModelLibrary\SSMonoComponentModelLibrary\bin\Release\SSMonoComponentModelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoConfigurationLibrary, Version=1.0.0.16087, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoConfigurationLibrary\SSMonoConfigurationLibrary\bin\Release\SSMonoConfigurationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoIOLibrary, Version=1.0.0.19962, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoIOLibrary\SSMonoIOLibrary\bin\Release\SSMonoIOLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoSpecializedCollectionsLibrary, Version=1.0.0.22254, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoSpecializedCollectionsLibrary\SSMonoSpecializedCollectionsLibrary\bin\Release\SSMonoSpecializedCollectionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoSupportLibrary, Version=1.0.0.19950, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoSupportLibrary\bin\Release\SSMonoSupportLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BooleanSwitch.cs" />
+    <Compile Include="CrestronConsoleTraceListener.cs" />
+    <Compile Include="CrestronLoggerTraceListener.cs" />
+    <Compile Include="Debug.cs" />
+    <Compile Include="DefaultTraceListener.cs" />
+    <Compile Include="DelimitedListTraceListener.cs" />
+    <Compile Include="DiagnosticsConfigurationHandler.cs" />
+    <Compile Include="ErrorlogTraceListener.cs" />
+    <Compile Include="IConfigErrorInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SourceLevels.cs" />
+    <Compile Include="SourceSwitch.cs" />
+    <Compile Include="Switch.cs" />
+    <Compile Include="SwitchLevelAttribute.cs" />
+    <Compile Include="TextWriterTraceListener.cs" />
+    <Compile Include="Trace.cs" />
+    <Compile Include="TraceEventCache.cs" />
+    <Compile Include="TraceEventType.cs" />
+    <Compile Include="TraceFilter.cs" />
+    <Compile Include="TraceImpl.cs" />
+    <Compile Include="TraceLevel.cs" />
+    <Compile Include="TraceListener.cs" />
+    <Compile Include="TraceListenerCollection.cs" />
+    <Compile Include="TraceOptions.cs" />
+    <Compile Include="TraceSource.cs" />
+    <Compile Include="TraceSourceInfo.cs" />
+    <Compile Include="TraceSwitch.cs" />
+    <Compile Include="VSDebuggerTraceListener.cs" />
+    <Compile Include="XmlWriterTraceListener.cs" />
+    <None Include="Properties\ControlSystem.cfg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{0B4745B0-194B-4BB6-8E21-E9057CA92500}">
+        <ProgramIdTag>SSMonoDiagnosticsLib</ProgramIdTag>
+        <SystemName>SSMonoDiagnosticsLibrary</SystemName>
+        <Programmer />
+        <ArchiveFilename>C:\Projects\Crestron\Simpl# Libraries\SSMonoDiagnosticsLibrary\SSMonoDiagnosticsLibrary\bin\Debug\SSMonoDiagnosticsLibrary.clz</ArchiveFilename>
+        <MinFirmwareVersion>1.007.0017</MinFirmwareVersion>
+        <CompiledOn>2/2/2016 11:32:16 AM</CompiledOn>
+        <AdditionalInfo />
+        <EmbedSourceArchive>False</EmbedSourceArchive>
+        <CopyTo>
+          <ReleaseAnyCPU />
+          <DebugAnyCPU />
+        </CopyTo>
+        <OriginalReferenceSources>
+          <Reference sourceFilename="../../SSMonoConfigurationLibrary/SSMonoConfigurationLibrary/bin/Release/SSMonoConfigurationLibrary.dll" referenceName="SSMonoConfigurationLibrary" />
+        </OriginalReferenceSources>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
