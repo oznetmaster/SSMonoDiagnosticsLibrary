@@ -1,5 +1,5 @@
 ﻿using Crestron.SimplSharp;
-using Crestron.SimplSharp.CrestronIO;
+using SSMono.IO;
 
 namespace SSMono.Diagnostics
 	{
@@ -50,22 +50,16 @@ namespace SSMono.Diagnostics
 			string fname = logFile;
 			if (string.IsNullOrEmpty (fname))
 				return;
-#if !SSHARP
 			FileInfo info = new FileInfo (fname);
-#endif
 			StreamWriter sw;
 
 			// Open the file
 			try
 				{
-#if SSHARP
-				sw = new StreamWriter (fname, true);
-#else
-					if (info.Exists)
-						sw = info.AppendText ();
-					else
-						sw = info.CreateText ();
-#endif
+				if (info.Exists)
+					sw = info.AppendText ();
+				else
+					sw = info.CreateText ();
 				}
 			catch
 				{
