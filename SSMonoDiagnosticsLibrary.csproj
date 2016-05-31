@@ -139,16 +139,11 @@
         <Programmer />
         <ArchiveFilename>C:\Projects\Crestron\Simpl# Libraries\SSMonoDiagnosticsLibrary\SSMonoDiagnosticsLibrary\bin\Debug\SSMonoDiagnosticsLibrary.clz</ArchiveFilename>
         <MinFirmwareVersion>1.007.0017</MinFirmwareVersion>
-        <CompiledOn>2/2/2016 11:32:16 AM</CompiledOn>
+        <CompiledOn>6/1/2016 7:15:15 AM</CompiledOn>
         <AdditionalInfo />
         <EmbedSourceArchive>False</EmbedSourceArchive>
-        <CopyTo>
-          <ReleaseAnyCPU />
-          <DebugAnyCPU />
-        </CopyTo>
-        <OriginalReferenceSources>
-          <Reference sourceFilename="../../SSMonoConfigurationLibrary/SSMonoConfigurationLibrary/bin/Release/SSMonoConfigurationLibrary.dll" referenceName="SSMonoConfigurationLibrary" />
-        </OriginalReferenceSources>
+        <CopyTo />
+        <OriginalReferenceSources />
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
